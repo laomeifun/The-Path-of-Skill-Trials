@@ -1,54 +1,53 @@
-# React + TypeScript + Vite
+# Profile Portal - 个人信息展示门户
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+这是一个使用现代前端技术栈构建的个人信息展示项目。
 
-Currently, two official plugins are available:
+## 技术栈
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **框架**: React 19 - 使用最新的 React 版本，体验其新特性
+- **开发语言**: TypeScript - 为 JavaScript 添加静态类型检查
+- **构建工具**: Vite 6 - 下一代前端构建工具，提供极速的开发体验
+- **包管理器**: pnpm - 高性能的 npm 替代品，节省磁盘空间
+- **代码规范**: 
+  - ESLint 9 - 代码质量检查工具
+  - TypeScript-ESLint - TypeScript 专用的 ESLint 规则
+  - React Hooks 规则检查
 
-## Expanding the ESLint configuration
+## 项目特点
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 使用 TypeScript 实现类型安全
+- 采用函数式组件和 React Hooks
+- 模块化的组件设计（Card、Avatar 等）
+- 使用 CSS 模块实现样式隔离
+- 响应式布局设计
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 学习收获
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+1. **TypeScript 实践**
+   - 学习了 TypeScript 的类型定义和接口使用
+   - 理解了类型检查如何提高代码质量
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+2. **React 新特性**
+   - 掌握了 React 19 的新功能
+   - 深入理解了函数式组件的使用
+   - 学习了组件间的数据传递和属性类型定义
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+3. **现代构建工具**
+   - 学习了 Vite 的配置和使用
+   - 理解了模块热重载（HMR）的工作原理
+
+4. **代码规范和质量**
+   - 配置和使用 ESLint 进行代码检查
+   - 学习了 React 项目的最佳实践
+
+5. **组件设计**
+   - 掌握了可复用组件的设计原则
+   - 学习了 Props 的类型定义和默认值设置
+
+## 后续优化方向
+
+- [ ] 添加单元测试
+- [ ] 引入状态管理工具
+- [ ] 优化组件性能
+- [ ] 添加更多交互功能
+- [ ] 改进响应式设计
